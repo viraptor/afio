@@ -228,6 +228,11 @@ extern char *sys_errlist[];
 #endif
 #endif /* major */
 
+#ifdef __APPLE__
+#include <utime.h>
+#include <signal.h>
+#endif
+
 #include "afio.h"
 
 
